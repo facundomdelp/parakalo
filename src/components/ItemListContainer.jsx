@@ -1,8 +1,18 @@
 import { Box, Text } from '@chakra-ui/react'
-import React from 'react'
-import ItemCount from './ItemCount'
+import React, { useEffect, useState } from 'react'
 
-const ItemListContainer = ({ greeting }) => {
+function ItemListContainer({ greeting }) {
+  const [products, setProducts] = useState([])
+  console.log('🚀 ~ ItemListContainer ~ products', products)
+  const URLJSON = '/data.json'
+  useEffect(() => {
+    setTimeout(() => {
+      fetch(URLJSON)
+        .then((products) => products.json())
+        .then((products) => setProducts(products)),
+        10000
+    })
+  }, [])
   return (
     <React.Fragment>
       <Box w='100vw' bg='#FBF0DA'>
@@ -10,7 +20,6 @@ const ItemListContainer = ({ greeting }) => {
           {greeting}
         </Text>
       </Box>
-      <ItemCount />
     </React.Fragment>
   )
 }

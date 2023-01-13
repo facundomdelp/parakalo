@@ -1,15 +1,15 @@
 import { AddIcon, MinusIcon } from '@chakra-ui/icons'
 import { Box, Button, Flex } from '@chakra-ui/react'
 import React, { useState } from 'react'
-import OnAdd from './OnAdd'
+import AddToCart from './AddToCart'
 import Stock from './Stock'
 
-const ItemCount = ({ stock = 10 }) => {
+const ItemCount = ({ stock = 0 }) => {
   const [count, setCount] = useState(0)
 
   return (
     <React.Fragment>
-      <Box borderWidth='1.75px' borderColor='gray.400' w='16em' h='1.75em'>
+      <Box borderWidth='1.75px' borderColor='gray.400' w='100%' h='1.75em'>
         <Flex justifyContent='space-between'>
           <Button
             color='blue'
@@ -34,7 +34,7 @@ const ItemCount = ({ stock = 10 }) => {
           </Button>
         </Flex>
       </Box>
-      <OnAdd />
+      <AddToCart />
       <Stock stock={stock} />
     </React.Fragment>
   )

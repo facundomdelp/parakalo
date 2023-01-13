@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import {
   Box,
   Flex,
@@ -14,7 +14,7 @@ import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 import CartWidget from './CartWidget'
 import parakaloDesign from '../assets/parakaloDesign.svg'
 
-const Links = ['All', 'Standard', 'Art', 'Animated']
+const Links = ['Productos', 'Estándar', 'Arte', 'Niños']
 
 const NavLink = ({ children }) => (
   <Link

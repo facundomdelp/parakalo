@@ -6,7 +6,7 @@ const Stock = ({ stock }) => {
     <Box
       borderWidth='.5px'
       borderColor='gray.400'
-      w='16em'
+      w='100%'
       h='1.75em'
       textAlign='center'
       color='gray.700'
