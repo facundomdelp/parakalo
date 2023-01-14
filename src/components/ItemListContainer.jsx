@@ -7,7 +7,7 @@ function ItemListContainer({ greeting }) {
   const [loading, setLoading] = useState(true)
   console.log('🚀 ~ ItemListContainer ~ loading', loading)
   console.log('🚀 ~ ItemListContainer ~ products', products)
-  const URLJSON = '/data.json'
+  const URLJSON = './data.json'
   useEffect(() => {
     setTimeout(() => {
       fetch(URLJSON)
