@@ -3,10 +3,11 @@ import ItemListContainer from './components/ItemListContainer'
 import NavBar from './components/NavBar'
 
 function App() {
+  const greet = '¡Bienvenidos a la tienda Parakaló!'
   return (
     <React.Fragment>
       <NavBar />
-      <ItemListContainer greeting='¡Bienvenidos a la tienda Parakaló!' />
+      <ItemListContainer greeting={greet} />
     </React.Fragment>
   )
 }

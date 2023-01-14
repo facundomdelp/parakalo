@@ -1,4 +1,5 @@
 import {
+  Button,
   Card,
   CardBody,
   Divider,
@@ -9,16 +10,23 @@ import {
 } from '@chakra-ui/react'
 import React from 'react'
 
-const Item = () => {
+const Item = ({ singleProduct }) => {
   return (
     <Card maxW='250px' boxShadow='2xl'>
       <CardBody>
-        <Image src={imagen} alt={nombre} borderRadius='lg' />
+        <Image
+          src={singleProduct.imagen}
+          alt={singleProduct.nombre}
+          borderRadius='lg'
+          boxSize='12em'
+        />
         <Stack mt='6' spacing='3'>
-          <Heading size='sm'>{nombre}</Heading>
-          <Text fontSize='xs'>{descripcion}</Text>
+          <Heading size='sm'>{singleProduct.nombre}</Heading>
+          <Button colorScheme='gray' fontSize='14px'>
+            Ver detalle
+          </Button>
           <Text color='blue.600' fontSize='2xl'>
-            {precio}
+            {singleProduct.precio}
           </Text>
         </Stack>
       </CardBody>
