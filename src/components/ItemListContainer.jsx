@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react'
 import Greetings from './Greetings'
 import Item from './Item'
 
-function ItemListContainer() {
+function ItemListContainer({ categoria }) {
+  console.log('🚀 ~ ItemListContainer ~ categoria', categoria)
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
   const URLJSON = './data.json'
@@ -28,10 +29,16 @@ function ItemListContainer() {
             color='blue.500'
             size='xl'
           />
-        ) : (
+        ) : categoria === 'todas' ? (
           products.map((singleProduct) => (
             <Item key={singleProduct.id} singleProduct={singleProduct} />
           ))
+        ) : (
+          products
+            .filter((singleProduct) => singleProduct.categoria === categoria)
+            .map((singleProduct) => (
+              <Item key={singleProduct.id} singleProduct={singleProduct} />
+            ))
         )}
       </Flex>
     </React.Fragment>
