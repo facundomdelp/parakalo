@@ -1,28 +1,24 @@
-import { Box, Flex, Spinner, Text } from '@chakra-ui/react'
+import { Flex, Spinner } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
+import Greetings from './Greetings'
 import Item from './Item'
 
-function ItemListContainer({ greeting }) {
+function ItemListContainer() {
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
-  console.log('🚀 ~ ItemListContainer ~ loading', loading)
-  console.log('🚀 ~ ItemListContainer ~ products', products)
   const URLJSON = './data.json'
+  const greetings = '¡Bienvenidos a la tienda Parakaló!'
   useEffect(() => {
     setTimeout(() => {
       fetch(URLJSON)
         .then((products) => products.json())
         .then((products) => setProducts(products.cortinas))
-        .then((loading) => setLoading(!!loading))
+        .then((loading) => setLoading(loading))
     }, 2000)
   }, [])
   return (
     <React.Fragment>
-      <Box w='100vw' bg='#FBF0DA'>
-        <Text align='center' fontWeight='500'>
-          {greeting}
-        </Text>
-      </Box>
+      <Greetings greetings={greetings} />
       <Flex flexWrap='wrap' justifyContent='center' gap='1.5em' p='1.5em'>
         {loading ? (
           <Spinner

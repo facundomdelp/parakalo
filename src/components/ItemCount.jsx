@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import AddToCart from './AddToCart'
 import Stock from './Stock'
 
-const ItemCount = ({ stock = 0 }) => {
+const ItemCount = ({ singleProduct }) => {
   const [count, setCount] = useState(0)
 
   return (
@@ -28,14 +28,18 @@ const ItemCount = ({ stock = 0 }) => {
             bg='none'
             h='none'
             p={0}
-            onClick={() => (count === stock ? stock : setCount(count + 1))}
+            onClick={() =>
+              count === singleProduct.stock
+                ? singleProduct.stock
+                : setCount(count + 1)
+            }
           >
             <AddIcon w={3} />
           </Button>
         </Flex>
       </Box>
       <AddToCart />
-      <Stock stock={stock} />
+      <Stock singleProduct={singleProduct} />
     </React.Fragment>
   )
 }
