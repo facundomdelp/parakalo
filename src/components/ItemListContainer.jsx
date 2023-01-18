@@ -1,45 +1,22 @@
-import { Flex, Spinner } from '@chakra-ui/react'
-import React, { useEffect, useState } from 'react'
-import Greetings from './Greetings'
+import { Flex } from '@chakra-ui/react'
+import React from 'react'
+import { useLocation } from 'react-router-dom'
 import Item from './Item'
 
-function ItemListContainer({ categoria }) {
-  console.log('🚀 ~ ItemListContainer ~ categoria', categoria)
-  const [products, setProducts] = useState([])
-  const [loading, setLoading] = useState(true)
-  const URLJSON = './data.json'
-  const greetings = '¡Bienvenidos a la tienda Parakaló!'
-  useEffect(() => {
-    setTimeout(() => {
-      fetch(URLJSON)
-        .then((products) => products.json())
-        .then((products) => setProducts(products.cortinas))
-        .then((loading) => setLoading(loading))
-    }, 2000)
-  }, [])
+function ItemListContainer({ products }) {
+  const categoria = useLocation().pathname.split('/')[1]
   return (
     <React.Fragment>
-      <Greetings greetings={greetings} />
       <Flex flexWrap='wrap' justifyContent='center' gap='1.5em' p='1.5em'>
-        {loading ? (
-          <Spinner
-            thickness='4px'
-            speed='0.65s'
-            emptyColor='gray.200'
-            color='blue.500'
-            size='xl'
-          />
-        ) : categoria === 'todas' ? (
-          products.map((singleProduct) => (
-            <Item key={singleProduct.id} singleProduct={singleProduct} />
-          ))
-        ) : (
-          products
-            .filter((singleProduct) => singleProduct.categoria === categoria)
-            .map((singleProduct) => (
+        {categoria === ''
+          ? products.map((singleProduct) => (
               <Item key={singleProduct.id} singleProduct={singleProduct} />
             ))
-        )}
+          : products
+              .filter((singleProduct) => singleProduct.categoria === categoria)
+              .map((singleProduct) => (
+                <Item key={singleProduct.id} singleProduct={singleProduct} />
+              ))}
       </Flex>
     </React.Fragment>
   )
