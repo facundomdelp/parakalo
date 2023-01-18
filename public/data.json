@@ -5,7 +5,7 @@
       "nombre": "Cortina Standard Black",
       "descripcion": "Cortina negra clásica texturada de poliéster de alta calidad .5x2.5mts.",
       "categoria": "estandar",
-      "imagen": "./src/assets/E01.jpg",
+      "imagen": "./assets/E01.jpg",
       "precio": "$9000",
       "stock": "18"
     },
@@ -14,7 +14,7 @@
       "nombre": "Cortina Celeste",
       "descripcion": "Cortina celeste texturada de poliéster de alta calidad .5x2.5mts.",
       "categoria": "estandar",
-      "imagen": "./src/assets/E02.jpg",
+      "imagen": "./assets/E02.jpg",
       "precio": "$9700",
       "stock": 15
     },
@@ -23,7 +23,7 @@
       "nombre": "Cortina Verde",
       "descripcion": "Cortina verde texturada de poliéster de alta calidad .5x2.5mts.",
       "categoria": "estandar",
-      "imagen": "./src/assets/E03.jpg",
+      "imagen": "./assets/E03.jpg",
       "precio": "$9700",
       "stock": 116
     },
@@ -32,7 +32,7 @@
       "nombre": "Cortina Gris",
       "descripcion": "Cortina gris texturada de poliéster de alta calidad .5x2.5mts.",
       "categoria": "estandar",
-      "imagen": "./src/assets/E04.jpg",
+      "imagen": "./assets/E04.jpg",
       "precio": "$9400",
       "stock": 48
     },
@@ -41,7 +41,7 @@
       "nombre": "Cortina Azul",
       "descripcion": "Cortina azul texturada de poliéster de alta calidad .5x2.5mts.",
       "categoria": "estandar",
-      "imagen": "./src/assets/E05.jpg",
+      "imagen": "./assets/E05.jpg",
       "precio": "$9000",
       "stock": 3
     },
@@ -50,7 +50,7 @@
       "nombre": "Cortina Beige",
       "descripcion": "Cortina beige texturada de poliéster de alta calidad .5x2.5mts.",
       "categoria": "estandar",
-      "imagen": "./src/assets/E06.jpg",
+      "imagen": "./assets/E06.jpg",
       "precio": "$10000",
       "stock": 0
     },
@@ -59,7 +59,7 @@
       "nombre": "Cortina Verde Salvia",
       "descripcion": "Cortina verde salvia texturada de poliéster de alta calidad .5x2.5mts.",
       "categoria": "estandar",
-      "imagen": "./src/assets/E07.jpg",
+      "imagen": "./assets/E07.jpg",
       "precio": "$10500",
       "stock": 0
     },
@@ -68,7 +68,7 @@
       "nombre": "Cortina Standard White",
       "descripcion": "Cortina blanca clásica texturada de poliéster de alta calidad .5x2.5mts.",
       "categoria": "estandar",
-      "imagen": "./src/assets/E08.jpg",
+      "imagen": "./assets/E08.jpg",
       "precio": "$9000",
       "stock": 214
     },
@@ -77,7 +77,7 @@
       "nombre": "Cortina Aves",
       "descripcion": "Cortina de ducha multicolor en colores con motivo de picaflores.",
       "categoria": "arte",
-      "imagen": "./src/assets/A01.jpg",
+      "imagen": "./assets/A01.jpg",
       "precio": "$9000",
       "stock": 8
     },
@@ -86,7 +86,7 @@
       "nombre": "Cortina Lirios",
       "descripcion": "Cortina de ducha con lirios de agua de 1916 de Lilly Lillies.",
       "categoria": "arte",
-      "imagen": "./src/assets/A02.jpg",
+      "imagen": "./assets/A02.jpg",
       "precio": "$12000",
       "stock": 21
     },
@@ -95,7 +95,7 @@
       "nombre": "Cortina Bosque",
       "descripcion": "Cortina Misty Forest, con árboles mágicos entre la niebla.",
       "categoria": "arte",
-      "imagen": "./src/assets/A03.jpg",
+      "imagen": "./assets/A03.jpg",
       "precio": "$10900",
       "stock": 112
     },
@@ -104,7 +104,7 @@
       "nombre": "Cortina Tropical",
       "descripcion": "Cortina bohemia tropical de mediados de siglo, tipo baño botánico.",
       "categoria": "arte",
-      "imagen": "./src/assets/A04.jpg",
+      "imagen": "./assets/A04.jpg",
       "precio": "$10000",
       "stock": 22
     },
@@ -113,7 +113,7 @@
       "nombre": "Cortina Art Nouveau",
       "descripcion": "Cortina de arte de William Morris Art Nouveau.",
       "categoria": "arte",
-      "imagen": "./src/assets/A05.jpg",
+      "imagen": "./assets/A05.jpg",
       "precio": "$16000",
       "stock": 28
     },
@@ -122,7 +122,7 @@
       "nombre": "Cortina Floral",
       "descripcion": "Cortina Wknoon de ducha con arreglo floral multicolor vintage.",
       "categoria": "arte",
-      "imagen": "./src/assets/A06.jpg",
+      "imagen": "./assets/A06.jpg",
       "precio": "$15500",
       "stock": 25
     },
@@ -131,7 +131,7 @@
       "nombre": "Cortina Gato",
       "descripcion": "Cortina de gato con gafas, de arte moderno.",
       "categoria": "arte",
-      "imagen": "./src/assets/A07.jpg",
+      "imagen": "./assets/A07.jpg",
       "precio": "$9200",
       "stock": 39
     },
@@ -140,7 +140,7 @@
       "nombre": "Cortina Enredadera",
       "descripcion": "Cortina de tipo enredadera multicolor de flores.",
       "categoria": "arte",
-      "imagen": "./src/assets/A08.jpg",
+      "imagen": "./assets/A08.jpg",
       "precio": "$15800",
       "stock": 100
     },
@@ -149,7 +149,7 @@
       "nombre": "Cortina Ciudad",
       "descripcion": "Cortina de superhéroes tipo cómic en la ciudad.",
       "categoria": "chicos",
-      "imagen": "./src/assets/C01.jpg",
+      "imagen": "./assets/C01.jpg",
       "precio": "$7000",
       "stock": 99
     },
@@ -158,7 +158,7 @@
       "nombre": "Cortina Océano",
       "descripcion": "Cortina de animales marinos en el fondo del océano.",
       "categoria": "chicos",
-      "imagen": "./src/assets/C02.jpg",
+      "imagen": "./assets/C02.jpg",
       "precio": "$5000",
       "stock": 42
     },
@@ -167,7 +167,7 @@
       "nombre": "Cortina Abecedario",
       "descripcion": "Cortina de ducha como herramienta educativa de las letras del abecedario.",
       "categoria": "chicos",
-      "imagen": "./src/assets/C03.jpg",
+      "imagen": "./assets/C03.jpg",
       "precio": "$9000",
       "stock": 0
     },
@@ -176,7 +176,7 @@
       "nombre": "Cortina Superhéroes",
       "descripcion": "Cortina de perros disfrazados de los superhéroes más famosos.",
       "categoria": "chicos",
-      "imagen": "./src/assets/C04.jpg",
+      "imagen": "./assets/C04.jpg",
       "precio": "$4000",
       "stock": 0
     },
@@ -185,7 +185,7 @@
       "nombre": "Cortina Autos",
       "descripcion": "Cortina de serie animada dream factory.",
       "categoria": "chicos",
-      "imagen": "./src/assets/C05.jpg",
+      "imagen": "./assets/C05.jpg",
       "precio": "$4500",
       "stock": 16
     },
@@ -194,7 +194,7 @@
       "nombre": "Cortina Digimon",
       "descripcion": "Cortina de anime no violento, famoso en occident lamado Digimon.",
       "categoria": "chicos",
-      "imagen": "./src/assets/C06.jpg",
+      "imagen": "./assets/C06.jpg",
       "precio": "$4600",
       "stock": 422
     },
@@ -203,7 +203,7 @@
       "nombre": "Cortina Halloween",
       "descripcion": "Cortina de diseño de gato mágico con calabaza de Halloween.",
       "categoria": "chicos",
-      "imagen": "./src/assets/C07.jpg",
+      "imagen": "./assets/C07.jpg",
       "precio": "$9900",
       "stock": 12
     },
@@ -212,7 +212,7 @@
       "nombre": "Cortina Safari",
       "descripcion": "Cortina tipo wild safari con los animalitos de la sábana del África.",
       "categoria": "chicos",
-      "imagen": "./src/assets/C08.jpg",
+      "imagen": "./assets/C08.jpg",
       "precio": "$5000",
       "stock": 1
     }
