@@ -4,12 +4,12 @@ import React from 'react'
 const Stock = ({ singleProduct }) => {
   return (
     <Box
-      borderWidth='.5px'
-      borderColor='gray.400'
       w='100%'
       h='1.75em'
       textAlign='center'
       color='gray.700'
+      fontSize='sm'
+      fontWeight='bold'
     >
       {singleProduct.stock === 0
         ? 'SIN STOCK'

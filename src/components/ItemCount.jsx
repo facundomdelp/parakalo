@@ -9,7 +9,13 @@ const ItemCount = ({ singleProduct }) => {
 
   return (
     <React.Fragment>
-      <Box borderWidth='1.75px' borderColor='gray.400' w='100%' h='1.75em'>
+      <Box
+        borderWidth='1.75px'
+        borderColor='gray.400'
+        w='80%'
+        h='1.75em'
+        marginInline='auto'
+      >
         <Flex justifyContent='space-between'>
           <Button
             color='blue'
