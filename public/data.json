@@ -7,7 +7,7 @@
       "categoria": "estandar",
       "imagen": "https://res.cloudinary.com/dxgstfkrs/image/upload/v1674005958/parakalo/E01_d9ga7t.jpg",
       "precio": "$9000",
-      "stock": "18"
+      "stock": 18
     },
     {
       "id": 2,
