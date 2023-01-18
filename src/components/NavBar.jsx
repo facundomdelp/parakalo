@@ -7,7 +7,7 @@ import SingleLink from './SingleLink'
 
 export default function Simple() {
   return (
-    <>
+    <React.Fragment>
       <Box bg={useColorModeValue('#C5E2FB')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <HStack spacing={8} alignItems={'center'}>
@@ -45,6 +45,6 @@ export default function Simple() {
           </Flex>
         </Flex>
       </Box>
-    </>
+    </React.Fragment>
   )
 }
