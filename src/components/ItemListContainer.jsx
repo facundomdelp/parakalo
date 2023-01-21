@@ -12,7 +12,7 @@ function ItemListContainer() {
     <Box minH={'100vh'}>
       <Grid
         gridTemplateColumns={'repeat(auto-fit, minmax(18em, 1fr))'}
-        gap={'1rem'}
+        gap={'2.5rem'}
         margin={'2rem'}
         textAlign={'center'}
       >
