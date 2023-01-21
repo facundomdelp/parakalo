@@ -20,13 +20,23 @@ function ItemListContainer() {
           <Loading />
         ) : categoria === '' ? (
           products.map((singleProduct) => (
-            <Item key={singleProduct.id} singleProduct={singleProduct} />
+            <Item
+              key={singleProduct.id}
+              nombre={singleProduct.nombre}
+              imagen={singleProduct.imagen}
+              precio={singleProduct.precio}
+            />
           ))
         ) : (
           products
             .filter((singleProduct) => singleProduct.categoria === categoria)
             .map((singleProduct) => (
-              <Item key={singleProduct.id} singleProduct={singleProduct} />
+              <Item
+                key={singleProduct.id}
+                nombre={singleProduct.nombre}
+                imagen={singleProduct.imagen}
+                precio={singleProduct.precio}
+              />
             ))
         )}
       </Grid>

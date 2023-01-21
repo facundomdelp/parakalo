@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import React from 'react'
 
-const Stock = ({ singleProduct }) => {
+const Stock = ({ stock }) => {
   return (
     <Box
       w={'100%'}
@@ -11,9 +11,7 @@ const Stock = ({ singleProduct }) => {
       fontSize={'sm'}
       fontWeight={'bold'}
     >
-      {singleProduct.stock === 0
-        ? 'SIN STOCK'
-        : 'STOCK DISPONIBLE: ' + singleProduct.stock}
+      {stock === 0 ? 'SIN STOCK' : 'STOCK DISPONIBLE: ' + stock}
     </Box>
   )
 }

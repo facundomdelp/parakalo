@@ -7,36 +7,31 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react'
-import { useParams } from 'react-router-dom'
 import ItemCount from './ItemCount'
 
-const ItemDetail = ({ products }) => {
-  const { nombre } = useParams()
-  const singleProduct = products.find(
-    (singleProduct) => singleProduct.nombre === nombre
-  )
+const ItemDetail = ({ nombre, imagen, descripcion, precio, stock }) => {
   return (
     <Flex justifyContent={'center'} marginTop={'2em'}>
       <Card boxShadow={'2xl'} maxW={'20em'}>
         <CardBody>
           <Heading size={'md'} color={'gray.700'}>
-            {singleProduct.nombre}
+            {nombre}
           </Heading>
           <Image
-            src={singleProduct.imagen}
-            alt={singleProduct.nombre}
+            src={imagen}
+            alt={nombre}
             borderRadius={'lg'}
             boxSize={'12em'}
             m={'1em'}
           />
           <Stack mt={'6'} spacing={'3'}>
-            <Text fontSize='sm'>{singleProduct.descripcion}</Text>
+            <Text fontSize='sm'>{descripcion}</Text>
             <Text color={'blue.600'} fontSize={'2xl'}>
-              {singleProduct.precio}
+              {precio}
             </Text>
           </Stack>
         </CardBody>
-        <ItemCount singleProduct={singleProduct} />
+        <ItemCount stock={stock} />
       </Card>
     </Flex>
   )

@@ -11,27 +11,28 @@ import {
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Item = ({ singleProduct }) => {
+const Item = ({ nombre, imagen, precio }) => {
   return (
     <Card boxShadow='xl'>
       <CardBody>
         <Image
-          src={singleProduct.imagen}
-          alt={singleProduct.nombre}
+          margin={'auto'}
+          src={imagen}
+          alt={nombre}
           borderRadius={'lg'}
           boxSize={'12em'}
         />
         <Stack mt={'6'} spacing={'3'}>
           <Heading size={'sm'} color={'gray.800'}>
-            {singleProduct.nombre}
+            {nombre}
           </Heading>
-          <Link to={`/detalle/${singleProduct.nombre}`}>
+          <Link to={`/detalle/${nombre}`}>
             <Button colorScheme={'gray'} fontSize={'14px'} w={'100%'}>
               Ver detalle
             </Button>
           </Link>
           <Text color={'blue.600'} fontSize={'2xl'}>
-            {singleProduct.precio}
+            {precio}
           </Text>
         </Stack>
       </CardBody>

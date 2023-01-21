@@ -32,7 +32,7 @@ export default function Simple() {
             <Box>
               <Link to={'/'}>
                 <Image
-                  boxSize={'150px'}
+                  maxW={'150px'}
                   objectFit={'contain'}
                   src={parakaloDesign}
                   alt={'Parakalo Design'}
