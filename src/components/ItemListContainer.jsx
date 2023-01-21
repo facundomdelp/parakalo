@@ -7,7 +7,7 @@ import Loading from './Loading'
 
 function ItemListContainer() {
   const categoria = useLocation().pathname.split('/')[1]
-  const [products, loading] = getProducts()
+  const { products, loading } = getProducts()
   return (
     <Box minH={'100vh'}>
       <Grid

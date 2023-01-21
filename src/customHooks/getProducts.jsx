@@ -15,6 +15,6 @@ function getProducts() {
         .then((loading) => setLoading(false))
     }, 2000)
   }, [categoria])
-  return [products, loading]
+  return { products, loading }
 }
 export default getProducts
