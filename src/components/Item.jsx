@@ -16,7 +16,7 @@ const Item = ({ nombre, imagen, precio }) => {
     <Card boxShadow='xl'>
       <CardBody>
         <Image
-          margin={'auto'}
+          m={'auto'}
           src={imagen}
           alt={nombre}
           borderRadius={'lg'}
