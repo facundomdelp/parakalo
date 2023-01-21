@@ -16,6 +16,12 @@ import SingleLink from './SingleLink'
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
 
 export default function Simple() {
+  const secciones = [
+    { to: '/', singleLink: 'Productos' },
+    { to: 'estandar', singleLink: 'Estándar' },
+    { to: 'arte', singleLink: 'Arte' },
+    { to: 'chicos', singleLink: 'Niños' },
+  ]
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <React.Fragment>
@@ -44,18 +50,11 @@ export default function Simple() {
               spacing={4}
               display={{ base: 'none', md: 'flex' }}
             >
-              <Link to={'/'}>
-                <SingleLink singleLink={'Productos'} />
-              </Link>
-              <Link to={'estandar'}>
-                <SingleLink singleLink={'Estándar'} />
-              </Link>
-              <Link to={'arte'}>
-                <SingleLink singleLink={'Arte'} />
-              </Link>
-              <Link to={'chicos'}>
-                <SingleLink singleLink={'Niños'} />
-              </Link>
+              {secciones.map((seccion) => (
+                <Link to={seccion.to}>
+                  <SingleLink singleLink={seccion.singleLink} />
+                </Link>
+              ))}
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
@@ -65,18 +64,11 @@ export default function Simple() {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              <Link to={'/'}>
-                <SingleLink singleLink={'Productos'} />
-              </Link>
-              <Link to={'estandar'}>
-                <SingleLink singleLink={'Estándar'} />
-              </Link>
-              <Link to={'arte'}>
-                <SingleLink singleLink={'Arte'} />
-              </Link>
-              <Link to={'chicos'}>
-                <SingleLink singleLink={'Niños'} />
-              </Link>
+              {secciones.map((seccion) => (
+                <Link to={seccion.to}>
+                  <SingleLink singleLink={seccion.singleLink} />
+                </Link>
+              ))}
             </Stack>
           </Box>
         ) : null}
