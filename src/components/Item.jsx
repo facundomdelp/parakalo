@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom'
 
 const Item = ({ singleProduct }) => {
   return (
-    <Card maxW='250px' boxShadow='2xl'>
+    <Card boxShadow='xl'>
       <CardBody>
         <Image
           src={singleProduct.imagen}
