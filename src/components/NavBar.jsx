@@ -56,9 +56,11 @@ export default function NavBar() {
               ))}
             </HStack>
           </HStack>
-          <Flex alignItems={'center'}>
-            <CartWidget />
-          </Flex>
+          <Link to={'/carrito'}>
+            <Flex alignItems={'center'}>
+              <CartWidget />
+            </Flex>
+          </Link>
         </Flex>
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
