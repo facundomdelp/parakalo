@@ -6,7 +6,6 @@ import {
   Text,
   VisuallyHidden,
   chakra,
-  useColorModeValue,
 } from '@chakra-ui/react'
 import { FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa'
 
@@ -21,20 +20,15 @@ const ListHeader = ({ children }) => {
 const SocialButton = ({ children, label, href }) => {
   return (
     <chakra.button
-      bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+      bg={'whiteAlpha.100'}
       rounded={'full'}
       w={8}
       h={8}
-      cursor={'pointer'}
       as={'a'}
-      href={href}
       display={'inline-flex'}
       alignItems={'center'}
       justifyContent={'center'}
       transition={'background 0.3s ease'}
-      _hover={{
-        bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-      }}
     >
       <VisuallyHidden>{label}</VisuallyHidden>
       {children}
@@ -89,10 +83,10 @@ export default function Footer() {
             <SocialButton label={'Twitter'}>
               <FaTwitter />
             </SocialButton>
-            <SocialButton label={'YouTube'} href={'#'}>
+            <SocialButton label={'YouTube'}>
               <FaYoutube />
             </SocialButton>
-            <SocialButton label={'Instagram'} href={'#'}>
+            <SocialButton label={'Instagram'}>
               <FaInstagram />
             </SocialButton>
           </Stack>

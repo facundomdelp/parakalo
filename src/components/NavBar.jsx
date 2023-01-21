@@ -3,7 +3,6 @@ import {
   Box,
   Flex,
   HStack,
-  useColorModeValue,
   Image,
   IconButton,
   useDisclosure,
@@ -25,7 +24,7 @@ export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <React.Fragment>
-      <Box bg={useColorModeValue('#C5E2FB')} px={4}>
+      <Box bg={'#C5E2FB'} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
