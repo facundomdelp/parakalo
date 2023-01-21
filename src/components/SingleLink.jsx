@@ -11,8 +11,8 @@ const SingleLink = ({ singleLink }) => {
         textDecoration: 'none',
         bg: useColorModeValue('gray.200', 'gray.700'),
       }}
-      fontWeight='500'
-      fontSize='14'
+      fontWeight={'500'}
+      fontSize={'14'}
     >
       {singleLink}
     </Text>

@@ -1,8 +1,8 @@
 import { Box, Grid } from '@chakra-ui/react'
 import React from 'react'
 import { useLocation } from 'react-router-dom'
+import getProducts from '../customHooks/getProducts'
 import Item from './Item'
-import getProducts from './../customHooks/getProducts'
 import Loading from './Loading'
 
 function ItemListContainer() {
@@ -11,10 +11,10 @@ function ItemListContainer() {
   return (
     <Box>
       <Grid
-        gridTemplateColumns='repeat(auto-fit, minmax(250px, 1fr))'
-        gap='1rem'
-        margin='1rem'
-        textAlign='center'
+        gridTemplateColumns={'repeat(auto-fit, minmax(250px, 1fr))'}
+        gap={'1rem'}
+        margin={'1rem'}
+        textAlign={'center'}
       >
         {loading ? (
           <Loading />

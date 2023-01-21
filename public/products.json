@@ -5,7 +5,7 @@
       "nombre": "Cortina Standard Black",
       "descripcion": "Cortina negra clásica texturada de poliéster de alta calidad .5x2.5mts.",
       "categoria": "estandar",
-      "imagen": "https://res.cloudinary.com/dxgstfkrs/image/upload/v1674005958/parakalo/E01_d9ga7t.jpg",
+      "imagen": "/assets/E01.jpg",
       "precio": "$9000",
       "stock": 18
     },

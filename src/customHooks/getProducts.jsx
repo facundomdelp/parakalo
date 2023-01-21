@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom'
 function getProducts() {
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
-  const URLJSON = '/data.json'
+  const URLJSON = '/products.json'
   const categoria = useLocation().pathname.split('/')[1]
   useEffect(() => {
     setLoading(true)

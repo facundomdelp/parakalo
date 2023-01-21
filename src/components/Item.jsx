@@ -18,19 +18,19 @@ const Item = ({ singleProduct }) => {
         <Image
           src={singleProduct.imagen}
           alt={singleProduct.nombre}
-          borderRadius='lg'
-          boxSize='12em'
+          borderRadius={'lg'}
+          boxSize={'12em'}
         />
-        <Stack mt='6' spacing='3'>
-          <Heading size='sm' color='gray.800'>
+        <Stack mt={'6'} spacing={'3'}>
+          <Heading size={'sm'} color={'gray.800'}>
             {singleProduct.nombre}
           </Heading>
           <Link to={`/detalle/${singleProduct.nombre}`}>
-            <Button colorScheme='gray' fontSize='14px' w='100%'>
+            <Button colorScheme={'gray'} fontSize={'14px'} w={'100%'}>
               Ver detalle
             </Button>
           </Link>
-          <Text color='blue.600' fontSize='2xl'>
+          <Text color={'blue.600'} fontSize={'2xl'}>
             {singleProduct.precio}
           </Text>
         </Stack>

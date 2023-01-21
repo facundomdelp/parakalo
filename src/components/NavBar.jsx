@@ -10,7 +10,7 @@ import {
   Stack,
 } from '@chakra-ui/react'
 import CartWidget from './CartWidget'
-import parakaloDesign from '../assets/parakaloDesign.svg'
+import parakaloDesign from '/assets/parakaloDesign.svg'
 import { Link } from 'react-router-dom'
 import SingleLink from './SingleLink'
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
@@ -30,12 +30,12 @@ export default function Simple() {
           />
           <HStack spacing={8} alignItems={'center'}>
             <Box>
-              <Link to='/'>
+              <Link to={'/'}>
                 <Image
-                  boxSize='150px'
-                  objectFit='contain'
+                  boxSize={'150px'}
+                  objectFit={'contain'}
                   src={parakaloDesign}
-                  alt='Parakalo Design'
+                  alt={'Parakalo Design'}
                 />
               </Link>
             </Box>
@@ -44,17 +44,17 @@ export default function Simple() {
               spacing={4}
               display={{ base: 'none', md: 'flex' }}
             >
-              <Link to='/'>
-                <SingleLink singleLink='Productos' />
+              <Link to={'/'}>
+                <SingleLink singleLink={'Productos'} />
               </Link>
-              <Link to='estandar'>
-                <SingleLink singleLink='Estándar' />
+              <Link to={'estandar'}>
+                <SingleLink singleLink={'Estándar'} />
               </Link>
-              <Link to='arte'>
-                <SingleLink singleLink='Arte' />
+              <Link to={'arte'}>
+                <SingleLink singleLink={'Arte'} />
               </Link>
-              <Link to='chicos'>
-                <SingleLink singleLink='Niños' />
+              <Link to={'chicos'}>
+                <SingleLink singleLink={'Niños'} />
               </Link>
             </HStack>
           </HStack>
@@ -65,17 +65,17 @@ export default function Simple() {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              <Link to='/'>
-                <SingleLink singleLink='Productos' />
+              <Link to={'/'}>
+                <SingleLink singleLink={'Productos'} />
               </Link>
-              <Link to='estandar'>
-                <SingleLink singleLink='Estándar' />
+              <Link to={'estandar'}>
+                <SingleLink singleLink={'Estándar'} />
               </Link>
-              <Link to='arte'>
-                <SingleLink singleLink='Arte' />
+              <Link to={'arte'}>
+                <SingleLink singleLink={'Arte'} />
               </Link>
-              <Link to='chicos'>
-                <SingleLink singleLink='Niños' />
+              <Link to={'chicos'}>
+                <SingleLink singleLink={'Niños'} />
               </Link>
             </Stack>
           </Box>
