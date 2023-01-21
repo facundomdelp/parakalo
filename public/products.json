@@ -3,7 +3,7 @@
     {
       "id": 1,
       "nombre": "Cortina Standard Black",
-      "descripcion": "Cortina negra clásica texturada de poliéster de alta calidad .5x2.5mts.",
+      "descripcion": "Cortina negra clásica texturada de poliéster de alta calidad 2.5x2.5mts.",
       "categoria": "estandar",
       "imagen": "/assets/E01.jpg",
       "precio": "$9000",
@@ -12,7 +12,7 @@
     {
       "id": 2,
       "nombre": "Cortina Celeste",
-      "descripcion": "Cortina celeste texturada de poliéster de alta calidad .5x2.5mts.",
+      "descripcion": "Cortina celeste texturada de poliéster de alta calidad 2.5x2.5mts.",
       "categoria": "estandar",
       "imagen": "/assets/E02.jpg",
       "precio": "$9700",
@@ -21,7 +21,7 @@
     {
       "id": 3,
       "nombre": "Cortina Verde",
-      "descripcion": "Cortina verde texturada de poliéster de alta calidad .5x2.5mts.",
+      "descripcion": "Cortina verde texturada de poliéster de alta calidad 2.5x2.5mts.",
       "categoria": "estandar",
       "imagen": "/assets/E03.jpg",
       "precio": "$9700",
@@ -30,7 +30,7 @@
     {
       "id": 4,
       "nombre": "Cortina Gris",
-      "descripcion": "Cortina gris texturada de poliéster de alta calidad .5x2.5mts.",
+      "descripcion": "Cortina gris texturada de poliéster de alta calidad 2.5x2.5mts.",
       "categoria": "estandar",
       "imagen": "/assets/E04.jpg",
       "precio": "$9400",
@@ -39,7 +39,7 @@
     {
       "id": 5,
       "nombre": "Cortina Azul",
-      "descripcion": "Cortina azul texturada de poliéster de alta calidad .5x2.5mts.",
+      "descripcion": "Cortina azul texturada de poliéster de alta calidad 2.5x2.5mts.",
       "categoria": "estandar",
       "imagen": "/assets/E05.jpg",
       "precio": "$9000",
@@ -48,7 +48,7 @@
     {
       "id": 6,
       "nombre": "Cortina Beige",
-      "descripcion": "Cortina beige texturada de poliéster de alta calidad .5x2.5mts.",
+      "descripcion": "Cortina beige texturada de poliéster de alta calidad 2.5x2.5mts.",
       "categoria": "estandar",
       "imagen": "/assets/E06.jpg",
       "precio": "$10000",
@@ -57,7 +57,7 @@
     {
       "id": 7,
       "nombre": "Cortina Verde Salvia",
-      "descripcion": "Cortina verde salvia texturada de poliéster de alta calidad .5x2.5mts.",
+      "descripcion": "Cortina verde salvia texturada de poliéster de alta calidad 2.5x2.5mts.",
       "categoria": "estandar",
       "imagen": "/assets/E07.jpg",
       "precio": "$10500",
@@ -66,7 +66,7 @@
     {
       "id": 8,
       "nombre": "Cortina Standard White",
-      "descripcion": "Cortina blanca clásica texturada de poliéster de alta calidad .5x2.5mts.",
+      "descripcion": "Cortina blanca clásica texturada de poliéster de alta calidad 2.5x2.5mts.",
       "categoria": "estandar",
       "imagen": "/assets/E08.jpg",
       "precio": "$9000",
@@ -75,7 +75,7 @@
     {
       "id": 9,
       "nombre": "Cortina Aves",
-      "descripcion": "Cortina de ducha multicolor en colores con motivo de picaflores.",
+      "descripcion": "Cortina de ducha en colores con motivo de picaflores.",
       "categoria": "arte",
       "imagen": "/assets/A01.jpg",
       "precio": "$9000",
@@ -192,7 +192,7 @@
     {
       "id": 22,
       "nombre": "Cortina Digimon",
-      "descripcion": "Cortina de anime no violento, famoso en occident lamado Digimon.",
+      "descripcion": "Cortina de anime violentito, famoso en occident lamado Digimon.",
       "categoria": "chicos",
       "imagen": "/assets/C06.jpg",
       "precio": "$4600",
