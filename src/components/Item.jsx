@@ -20,7 +20,7 @@ const Item = ({ nombre, imagen, precio }) => {
           src={imagen}
           alt={nombre}
           borderRadius={'lg'}
-          boxSize={'12em'}
+          boxSize={'auto'}
         />
         <Stack mt={'6'} spacing={'3'}>
           <Heading size={'sm'} color={'gray.800'}>

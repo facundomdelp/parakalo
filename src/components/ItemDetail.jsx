@@ -11,8 +11,8 @@ import ItemCount from './ItemCount'
 
 const ItemDetail = ({ nombre, imagen, descripcion, precio, stock }) => {
   return (
-    <Flex justifyContent={'center'} marginTop={'3em'}>
-      <Card boxShadow={'2xl'} maxW={'20em'}>
+    <Flex justifyContent={'center'} m={'2em'}>
+      <Card boxShadow={'2xl'} maxW={'26em'} p={'.5em'} textAlign={'center'}>
         <CardBody>
           <Heading size={'md'} color={'gray.700'}>
             {nombre}
@@ -23,7 +23,7 @@ const ItemDetail = ({ nombre, imagen, descripcion, precio, stock }) => {
             src={imagen}
             alt={nombre}
             borderRadius={'lg'}
-            boxSize={'12em'}
+            boxSize={'18em'}
           />
           <Stack mt={'6'} spacing={'3'}>
             <Text fontSize='sm'>{descripcion}</Text>

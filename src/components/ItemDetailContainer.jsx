@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import getProducts from '../customHooks/getProducts'
+import getProducts from '../hooks/getProducts'
 import ItemDetail from './ItemDetail'
 import Loading from './Loading'
 
