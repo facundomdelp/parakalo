@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import AddToCart from './AddToCart'
 import Stock from './Stock'
 
-const ItemCount = ({ stock }) => {
+const ItemCount = ({ id, nombre, precio, stock }) => {
   const [count, setCount] = useState(1)
 
   return (
@@ -40,7 +40,13 @@ const ItemCount = ({ stock }) => {
           </Button>
         </Flex>
       </Box>
-      <AddToCart cantidadAgregada={count} stock={stock} />
+      <AddToCart
+        id={id}
+        nombre={nombre}
+        precio={precio}
+        cantidadAgregada={count}
+      />
+      <Stock stock={stock} />
     </React.Fragment>
   )
 }

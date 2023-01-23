@@ -9,7 +9,7 @@ import {
 } from '@chakra-ui/react'
 import ItemCount from './ItemCount'
 
-const ItemDetail = ({ nombre, imagen, descripcion, precio, stock }) => {
+const ItemDetail = ({ id, nombre, imagen, descripcion, precio, stock }) => {
   return (
     <Flex justifyContent={'center'} m={'2em'}>
       <Card boxShadow={'2xl'} maxW={'26em'} p={'.5em'} textAlign={'center'}>
@@ -32,7 +32,7 @@ const ItemDetail = ({ nombre, imagen, descripcion, precio, stock }) => {
             </Text>
           </Stack>
         </CardBody>
-        <ItemCount stock={stock} />
+        <ItemCount id={id} nombre={nombre} precio={precio} stock={stock} />
       </Card>
     </Flex>
   )

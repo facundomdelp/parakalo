@@ -1,16 +1,15 @@
-import { Box } from '@chakra-ui/react'
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Box } from '@chakra-ui/react'
 import getProducts from '../hooks/getProducts'
 import ItemDetail from './ItemDetail'
 import Loading from './Loading'
+import { useParams } from 'react-router-dom'
 
 const ItemDetailContainer = () => {
   const { products, loading } = getProducts()
-  const { productoSeleccionado } = useParams()
+  const { nombre } = useParams()
   const singleProduct = products.find(
-    (singleProduct) =>
-      singleProduct.productoSeleccionado === productoSeleccionado
+    (singleProduct) => singleProduct.nombre === nombre
   )
   return (
     <Box minH={'100vh'}>
@@ -18,6 +17,7 @@ const ItemDetailContainer = () => {
         <Loading />
       ) : (
         <ItemDetail
+          id={singleProduct.id}
           nombre={singleProduct.nombre}
           imagen={singleProduct.imagen}
           descripcion={singleProduct.descripcion}
