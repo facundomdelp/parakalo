@@ -27,7 +27,7 @@ const ItemCount = ({ id, imagen, nombre, descripcion, precio, stock }) => {
             <MinusIcon w={3} />
           </Button>
           <Box fontWeight={600} color={'gray.600'}>
-            {count}
+            {stock === 0 ? 0 : count}
           </Box>
           <Button
             color={'blue'}
