@@ -48,7 +48,7 @@ const ItemCount = ({ id, imagen, nombre, descripcion, precio, stock }) => {
         precio={precio}
         cantidadAgregada={count}
       />
-      <Stock stock={stock} id={id} />
+      <Stock stock={stock} />
     </React.Fragment>
   )
 }
