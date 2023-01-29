@@ -18,11 +18,11 @@ function App() {
     setItems(docs)
   }
 
-  console.log(items)
-
   useEffect(() => {
     getItems()
   }, [])
+
+  console.log('🚀 ~ items', items)
 
   return (
     <React.Fragment>
