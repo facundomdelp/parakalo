@@ -30,7 +30,6 @@ const AddToCart = ({
       ])
     }
   }
-  console.log('🚀 ~ AddToCart ~ carrito', carrito)
   return (
     <React.Fragment>
       {
