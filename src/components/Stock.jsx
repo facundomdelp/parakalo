@@ -1,7 +1,9 @@
 import { Box } from '@chakra-ui/react'
-import React from 'react'
+import React, { useContext } from 'react'
+import CartContext from '../context/CartContext'
 
-const Stock = ({ stock }) => {
+const Stock = ({ stock, id }) => {
+  const { carrito } = useContext(CartContext)
   return (
     <Box
       w={'100%'}
@@ -11,7 +13,13 @@ const Stock = ({ stock }) => {
       fontSize={'sm'}
       fontWeight={'bold'}
     >
-      {stock === 0 ? 'SIN STOCK' : 'STOCK DISPONIBLE: ' + stock}
+      {stock === 0
+        ? 'SIN STOCK'
+        : 'STOCK DISPONIBLE: ' +
+          (stock -
+            (carrito.find((compra) => compra.id === id) === undefined
+              ? 0
+              : carrito.find((compra) => compra.id === id).cantidad))}
     </Box>
   )
 }
