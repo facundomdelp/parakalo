@@ -196,7 +196,7 @@ const CartDetail = () => {
                           "tituloPrecioPorCompra      precioPorCompra"
                           "eliminar                   eliminar"`}
           gridTemplateColumns={'8rem 8rem'}
-          gridTemplateRows={'16rem auto auto auto auto auto auto'}
+          gridTemplateRows={'auto auto auto auto auto auto auto'}
           gap={'.5'}
           mb={'2rem'}
           borderBottom={'2px solid gray'}
@@ -206,10 +206,11 @@ const CartDetail = () => {
           <GridItem
             area={'imagen'}
             paddingInline={'.75rem'}
+            marginBottom={'1rem'}
             justifySelf={'center'}
             alignSelf={'center'}
           >
-            <Img src={compra.imagen} borderRadius={'lg'} w={'100%'} />
+            <Img src={compra.imagen} borderRadius={'lg'} maxWidth={'6rem'} />
           </GridItem>
           <GridItem
             area={'producto'}
