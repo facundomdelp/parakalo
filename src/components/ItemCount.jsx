@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import AddToCart from './AddToCart'
 import Stock from './Stock'
 
-const ItemCount = ({ id, nombre, precio, stock }) => {
+const ItemCount = ({ id, imagen, nombre, descripcion, precio, stock }) => {
   const [count, setCount] = useState(1)
 
   return (
@@ -42,7 +42,9 @@ const ItemCount = ({ id, nombre, precio, stock }) => {
       </Box>
       <AddToCart
         id={id}
+        imagen={imagen}
         nombre={nombre}
+        descripcion={descripcion}
         precio={precio}
         cantidadAgregada={count}
       />

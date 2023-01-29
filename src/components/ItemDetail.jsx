@@ -32,7 +32,14 @@ const ItemDetail = ({ id, nombre, imagen, descripcion, precio, stock }) => {
             </Text>
           </Stack>
         </CardBody>
-        <ItemCount id={id} nombre={nombre} precio={precio} stock={stock} />
+        <ItemCount
+          id={id}
+          imagen={imagen}
+          nombre={nombre}
+          descripcion={descripcion}
+          precio={precio}
+          stock={stock}
+        />
       </Card>
     </Flex>
   )

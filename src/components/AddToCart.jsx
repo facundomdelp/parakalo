@@ -3,7 +3,14 @@ import React, { useContext } from 'react'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import CartContext from '../context/CartContext'
 
-const AddToCart = ({ id, nombre, precio, cantidadAgregada }) => {
+const AddToCart = ({
+  id,
+  imagen,
+  nombre,
+  descripcion,
+  precio,
+  cantidadAgregada,
+}) => {
   const { carrito, setCarrito } = useContext(CartContext)
   function onAdd() {
     if (carrito.find((compra) => compra.id === id)) {
@@ -12,7 +19,14 @@ const AddToCart = ({ id, nombre, precio, cantidadAgregada }) => {
     } else {
       setCarrito([
         ...carrito,
-        { id: id, nombre: nombre, precio: precio, cantidad: cantidadAgregada },
+        {
+          id: id,
+          imagen: imagen,
+          nombre: nombre,
+          descripcion: descripcion,
+          precio: precio,
+          cantidad: cantidadAgregada,
+        },
       ])
     }
   }
