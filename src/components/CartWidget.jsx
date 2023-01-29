@@ -5,13 +5,7 @@ import CartContext from '../context/CartContext'
 
 const CartWidget = () => {
   const { carrito } = useContext(CartContext)
-  const sumaDeCompras =
-    carrito > 0
-      ? carrito.reduce(
-          (acumulador, valorActual) =>
-            acumulador.cantidad + valorActual.cantidad
-        )
-      : 0
+  const sumaDeCompras = carrito.length
   return (
     <Flex>
       <Icon as={AiOutlineShoppingCart} boxSize={8} mr={2} />
