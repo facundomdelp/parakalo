@@ -25,6 +25,7 @@ function ItemListContainer() {
               nombre={singleProduct.nombre}
               imagen={singleProduct.imagen}
               precio={singleProduct.precio}
+              id={singleProduct.id}
             />
           ))
         ) : (
