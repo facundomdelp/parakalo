@@ -5,24 +5,23 @@ import './scrollbar.css'
 import MainRoutes from './router/MainRoutes'
 import Footer from './components/Footer'
 import { CartContextProvider } from './context/CartContext'
-import { collection, getDocs, doc } from 'firebase/firestore'
+import { collection, getDocs } from 'firebase/firestore'
 import { db } from './../db/firebase-config'
 
 function App() {
-  const [items, setItems] = useState([])
+  const [products, setProducts] = useState([])
   const itemsCollectionRef = collection(db, 'products')
 
-  const getItems = async () => {
+  const getProducts = async () => {
     const querySnapshot = await getDocs(itemsCollectionRef)
-    const docs = querySnapshot.docs.map((doc) => doc.data())
-    setItems(docs)
+    setProducts(querySnapshot.docs.map(doc => ({...doc.data(), id: doc.id})))
   }
 
   useEffect(() => {
-    getItems()
+    getProducts()
   }, [])
 
-  console.log('🚀 ~ items', items)
+  console.log('🚀 ~ products', products)
 
   return (
     <React.Fragment>
