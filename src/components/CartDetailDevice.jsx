@@ -157,7 +157,7 @@ const CartDetailDevice = ({ carrito, setCarrito }) => {
           FINALIZAR COMPRA
         </Button>
         <Modal isOpen={isOpen} onClose={onClose}>
-          <CompletePurchase carrito={carrito} />
+          <CompletePurchase />
         </Modal>
       </Box>
     </Box>
