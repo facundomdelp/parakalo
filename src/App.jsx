@@ -7,16 +7,15 @@ import Footer from './components/Footer'
 import { CartContextProvider } from './context/CartContext'
 
 function App() {
-
   return (
-    <React.Fragment>
+    <body className='layout'>
       <CartContextProvider>
         <NavBar />
         <Greetings />
         <MainRoutes />
       </CartContextProvider>
       <Footer />
-    </React.Fragment>
+    </body>
   )
 }
 
