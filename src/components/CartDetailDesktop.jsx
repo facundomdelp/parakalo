@@ -7,19 +7,18 @@ import {
   Button,
   Flex,
   Text,
+  useDisclosure,
+  Modal,
 } from '@chakra-ui/react'
 import { DeleteIcon } from '@chakra-ui/icons'
 import { CartCalc } from '../utils/CartCalc'
+import CompletePurchase from './CompletePurchase'
 
 const CartDetailDesktop = ({ carrito, setCarrito }) => {
   const { cantidadDeArticulos, precioTotal } = CartCalc(carrito)
+  const { isOpen, onOpen, onClose } = useDisclosure()
   return (
-    <Box
-      minH={'100vh'}
-      mt={'1.5rem'}
-      marginInline={'auto'}
-      minWidth={'42rem'}
-    >
+    <Box minH={'100vh'} mt={'1.5rem'} marginInline={'auto'} minWidth={'42rem'}>
       {carrito.map((compra) => (
         <Grid
           templateAreas={`"imagen   producto      tituloPrecioPorArticulo   tituloCantidad        tituloPrecioPorCompra"
@@ -139,7 +138,12 @@ const CartDetailDesktop = ({ carrito, setCarrito }) => {
         <Text>${precioTotal}</Text>
       </Flex>
       <Box textAlign={'right'} paddingInline={'3rem'}>
-        <Button mt={'2em'}>FINALIZAR COMPRA</Button>
+        <Button mt={'2em'} onClick={onOpen}>
+          FINALIZAR COMPRA
+        </Button>
+        <Modal isOpen={isOpen} onClose={onClose}>
+          <CompletePurchase carrito={carrito} />
+        </Modal>
       </Box>
     </Box>
   )

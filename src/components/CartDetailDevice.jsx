@@ -1,10 +1,21 @@
 import React from 'react'
-import { Box, Grid, GridItem, Img, Button, Text } from '@chakra-ui/react'
+import {
+  Box,
+  Grid,
+  GridItem,
+  Img,
+  Button,
+  Text,
+  useDisclosure,
+  Modal,
+} from '@chakra-ui/react'
 import { DeleteIcon } from '@chakra-ui/icons'
 import { CartCalc } from '../utils/CartCalc'
+import CompletePurchase from './CompletePurchase'
 
 const CartDetailDevice = ({ carrito, setCarrito }) => {
   const { cantidadDeArticulos, precioTotal } = CartCalc(carrito)
+  const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <Box
       minH={'100vh'}
@@ -37,11 +48,7 @@ const CartDetailDevice = ({ carrito, setCarrito }) => {
             justifySelf={'center'}
             alignSelf={'center'}
           >
-            <Img
-              src={compra.imagen}
-              borderRadius={'lg'}
-              maxWidth={'6rem'}
-            />
+            <Img src={compra.imagen} borderRadius={'lg'} maxWidth={'6rem'} />
           </GridItem>
           <GridItem
             area={'producto'}
@@ -145,12 +152,13 @@ const CartDetailDevice = ({ carrito, setCarrito }) => {
         </Text>
         <Text>${precioTotal}</Text>
       </Box>
-      <Box
-        textAlign={'right'}
-        paddingInline={'1rem'}
-        paddingBottom={'2rem'}
-      >
-        <Button mt={'2em'}>FINALIZAR COMPRA</Button>
+      <Box textAlign={'right'} paddingInline={'1rem'} paddingBottom={'2rem'}>
+        <Button mt={'2em'} onClick={onOpen}>
+          FINALIZAR COMPRA
+        </Button>
+        <Modal isOpen={isOpen} onClose={onClose}>
+          <CompletePurchase carrito={carrito} />
+        </Modal>
       </Box>
     </Box>
   )
