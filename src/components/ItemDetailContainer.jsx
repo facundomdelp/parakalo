@@ -8,7 +8,9 @@ import { useParams } from 'react-router-dom'
 const ItemDetailContainer = () => {
   const { products, loading } = getProducts()
   const { id } = useParams()
-  const singleProduct = products.find((singleProduct) => singleProduct.id === id)
+  const singleProduct = products.find(
+    (singleProduct) => singleProduct.id === id
+  )
   return (
     <Box minH={'100vh'}>
       {loading ? (
