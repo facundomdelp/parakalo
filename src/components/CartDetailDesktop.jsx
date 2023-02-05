@@ -137,14 +137,21 @@ const CartDetailDesktop = ({ carrito, setCarrito }) => {
         </Text>
         <Text>${precioTotal}</Text>
       </Flex>
-      <Box textAlign={'right'} paddingInline={'3rem'}>
+      <Flex
+        textAlign={'right'}
+        paddingInline={'3rem'}
+        justifyContent={'space-between'}
+      >
+        <Button mt={'2em'} onClick={() => setCarrito([])}>
+          VACIAR CARRITO
+        </Button>
         <Button mt={'2em'} onClick={onOpen}>
           FINALIZAR COMPRA
         </Button>
-        <Modal isOpen={isOpen} onClose={onClose}>
-          <CompletePurchase carrito={carrito} />
+        <Modal isOpen={isOpen} onClose={onClose} isCentered>
+          <CompletePurchase />
         </Modal>
-      </Box>
+      </Flex>
     </Box>
   )
 }
