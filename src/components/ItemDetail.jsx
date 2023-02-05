@@ -28,7 +28,7 @@ const ItemDetail = ({ id, nombre, imagen, descripcion, precio, stock }) => {
           <Stack mt={'6'} spacing={'3'}>
             <Text fontSize='sm'>{descripcion}</Text>
             <Text color={'blue.600'} fontSize={'2xl'}>
-              {precio}
+              ${precio}
             </Text>
           </Stack>
         </CardBody>
