@@ -77,7 +77,7 @@ export default function CompletePurchase() {
       setCarrito([])
       setCompraFinalizada(false)
       setCamposObligatorios(false)
-    }, 8000)
+    }, 5000)
   }
   return (
     <>
