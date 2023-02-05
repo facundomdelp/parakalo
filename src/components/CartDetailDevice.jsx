@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {
   Box,
   Grid,
@@ -12,8 +12,10 @@ import {
 import { DeleteIcon } from '@chakra-ui/icons'
 import { CartCalc } from '../utils/CartCalc'
 import CompletePurchase from './CompletePurchase'
+import CartContext from '../context/CartContext'
 
-const CartDetailDevice = ({ carrito, setCarrito }) => {
+const CartDetailDevice = () => {
+  const { carrito, setCarrito } = useContext(CartContext)
   const { cantidadDeArticulos, precioTotal } = CartCalc(carrito)
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
