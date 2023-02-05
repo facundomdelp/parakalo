@@ -26,7 +26,7 @@ const CartDetail = () => {
         Vuelve a la página principal para descrubir miles de productos.
       </Text>
       <Link to={'/'}>
-        <Button width={'fit-content'} marginTop={'1em'} paddingInline={'4em'}>
+        <Button width={'fit-content'} marginBlock={'2em'} paddingInline={'4em'}>
           PÁGINA PRINCIPAL
         </Button>
       </Link>
