@@ -41,6 +41,7 @@ const ItemCount = ({ id, imagen, nombre, descripcion, precio, stock }) => {
         </Flex>
       </Box>
       <AddToCart
+        stock={stock}
         id={id}
         imagen={imagen}
         nombre={nombre}
