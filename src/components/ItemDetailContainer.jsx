@@ -12,7 +12,7 @@ const ItemDetailContainer = () => {
     (singleProduct) => singleProduct.id === id
   )
   return (
-    <Box minH={'100vh'}>
+    <Box>
       {loading ? (
         <Loading />
       ) : (

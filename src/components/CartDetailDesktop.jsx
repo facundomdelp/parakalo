@@ -20,7 +20,7 @@ const CartDetailDesktop = () => {
   const { cantidadDeArticulos, precioTotal } = CartCalc(carrito)
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
-    <Box minH={'100vh'} mt={'1.5rem'} marginInline={'auto'} minWidth={'42rem'}>
+    <Box mt={'1.5rem'} marginInline={'auto'} minWidth={'42rem'}>
       {carrito.map((compra) => (
         <Grid
           templateAreas={`"imagen   producto      tituloPrecioPorArticulo   tituloCantidad        tituloPrecioPorCompra"

@@ -20,7 +20,6 @@ const CartDetailDevice = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <Box
-      minH={'100vh'}
       mt={'1.5rem'}
       display={'flex'}
       flexDirection={'column'}

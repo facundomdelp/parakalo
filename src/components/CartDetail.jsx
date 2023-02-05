@@ -10,7 +10,6 @@ const CartDetail = () => {
   const [isLargerThat700] = useMediaQuery('(min-width: 700px)')
   return carrito.length === 0 ? (
     <Box
-      minH={'100vh'}
       mt={'2rem'}
       marginInline={'auto'}
       maxWidth={'42rem'}

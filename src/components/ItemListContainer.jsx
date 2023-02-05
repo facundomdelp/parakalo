@@ -9,7 +9,7 @@ function ItemListContainer() {
   const categoria = useLocation().pathname.split('/')[1]
   const { products, loading } = getProducts()
   return (
-    <Box minH={'100vh'}>
+    <Box>
       <Grid
         gridTemplateColumns={'repeat(auto-fit, minmax(18em, 1fr))'}
         gap={'2.5rem'}
