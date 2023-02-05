@@ -4,6 +4,7 @@ import { AiOutlineShoppingCart } from 'react-icons/ai'
 import CartContext from '../context/CartContext'
 
 const AddToCart = ({
+  stock,
   id,
   imagen,
   nombre,
@@ -34,6 +35,7 @@ const AddToCart = ({
     <React.Fragment>
       {
         <Button
+          isDisabled={stock === 0}
           borderWidth={'.5px'}
           borderColor={'gray.400'}
           w={'80%'}
